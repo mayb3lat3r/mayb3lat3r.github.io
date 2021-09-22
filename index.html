@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="shortcut icon" href="src/img/favicon.svg">
+    <base href="http://localhost:3000/">
+    <title>Тинькофф Прокат</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="src/img/icons/logo.svg" alt="Тинькофф Прокат">
+    </header>
+    <!-- search_active search_more_history search_not_found search_live scroll-->
+    <main class="main search_active search_more_history search_live scroll">
+        <div class="search-box">
+            <div class="search-box__search-icon">
+                <img src="src/img/icons/loupe.svg" alt="Поиск">
+            </div>
+            <div class="search-box__search-input">
+                <input type="search" placeholder="Поиск фильмов по жанрам и актерам">
+            </div>
+        </div>
+        <div class="search-box__recent">
+            <span>Как я встретил мамку</span>
+            <span>Гоп-стоп</span>
+            <span>Весенний дрозд</span>
+            <span>Смешарики</span>
+            <span>Белоснежка и семь гномов</span>
+            <span>Трое в лодке</span>
+            <span>Бандитский Петербург</span>
+            <span>Спящая женщина и принц</span>
+            <span>Война миров</span>
+            <span>Дикий дикий дикий запад</span>
+        </div>
+
+        <div class="no-results">
+            <span>Мы не поняли о чем речь ¯\_(ツ)_/¯</span>
+        </div>
+        <div class="results">
+            <div class="results__count">
+                <span>Нашли 82 фильма</span>
+            </div>
+            <div class="results__content">
+                <div class="movie">
+                    <img src="src/img/posters/poster1.png" alt="Форрест Гамп">
+                    <div class="movie__info">
+                        <div class="movie__rating">
+                            <img src="src/img/rate-icons/r05.png" alt="5.0">
+                            <span>5.0</span>
+                        </div>
+                        <div class="movie__title">
+                            Форрест Гамп
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__genre">
+                                Драма, романтика
+                            </div>
+                            <div class="movie__year">
+                                1994
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="src/img/posters/poster2.png" alt="Спасти рядового Райана">
+                    <div class="movie__info">
+                        <div class="movie__rating">
+                            <img src="src/img/rate-icons/r04.png" alt="4.2">
+                            <span>4.2</span>
+                        </div>
+                        <div class="movie__title">
+                            Спасти рядового Райана
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__genre">
+                                Боевик, военный
+                            </div>
+                            <div class="movie__year">
+                                1998
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="src/img/posters/poster3.png" alt="Аполлон 13">
+                    <div class="movie__info">
+                        <div class="movie__rating">
+                            <img src="src/img/rate-icons/r03.png" alt="3.3">
+                            <span>3.3</span>
+                        </div>
+                        <div class="movie__title">
+                            Аполлон 13
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__genre">
+                                Драма, приключения
+                            </div>
+                            <div class="movie__year">
+                                1995
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="src/img/posters/poster4.png" alt="Инферно">
+                    <div class="movie__info">
+                        <div class="movie__rating">
+                            <img src="src/img/rate-icons/r02.png" alt="2.0">
+                            <span>2.0</span>
+                        </div>
+                        <div class="movie__title">
+                            Инферно
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__genre">
+                                Драма, романтика
+                            </div>
+                            <div class="movie__year">
+                                1994
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie movie_no-poster">
+                    <div class="movie__info">
+                        <div class="movie__title">
+                            Шпионский мост
+                        </div>
+                        <div class="movie__description">
+                            <div class="movie__genre">
+                                Боевик, триллер
+                            </div>
+                            <div class="movie__year">
+                                2017
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie movie_loading">
+                    <div class="movie__info">
+                        <div class="movie__title"></div>
+                        <div class="movie__description"></div>
+                    </div>
+                </div>
+
+                <div class="movie movie_loading">
+                    <div class="movie__info">
+                        <div class="movie__title"></div>
+                        <div class="movie__description"></div>
+                    </div>
+                </div>
+
+                <div class="movie movie_loading">
+                    <div class="movie__info">
+                        <div class="movie__title"></div>
+                        <div class="movie__description"></div>
+                    </div>
+                </div>
+
+                <div class="movie movie_loading">
+                    <div class="movie__info">
+                        <div class="movie__title"></div>
+                        <div class="movie__description"></div>
+                    </div>
+                </div>
+
+                <div class="movie movie_loading">
+                    <div class="movie__info">
+                        <div class="movie__title"></div>
+                        <div class="movie__description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <span>© 2019 Тинькофф Прокат</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+@keyframes fade {
+    0% {
+        background-color: #ffffff;
+    }
+    50% {
+        background-color: #999999;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+.results {
+    display: none;
+}
+
+.search_live .results {
+    display: block;
+}
+
+.results__count {
+    margin-bottom: 36px;
+}
+
+.results__count span {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 900;
+}
+
+.results__content {
+    display: grid;
+    grid-template-columns: 302px 302px 302px 302px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.movie {
+    position: relative;
+    border-radius: 12px;
+    height: 454px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.movie img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie__description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 0.24;
+}
+
+.movie_loading .movie__title {
+    margin-top: 330px;
+    width: 246px;
+    height: 24px;
+    animation: fade 2s ease-in-out infinite;
+    opacity: 0.08;
+}
+
+.movie_loading .movie__description {
+    margin-top: 8px;
+    width: 156px;
+    height: 24px;
+    animation: fade 2s ease-in-out infinite;
+    opacity: 0.08;
+}
+
+/* movie info */
+.movie:hover .movie__info {
+    display: block;
+}
+
+.movie__info {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.43%, rgba(0, 0, 0, 0.8) 72.41%);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+}
+
+.movie__rating {
+    padding-top: 80px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.movie__rating img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.movie__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+/* no poster title */
+.movie_no-poster .movie__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    opacity: 0.24;
+}
+
+.movie_no-poster .movie__info {
+    display: block;
+    background: none;
+}
+
+/* movie loading */
+.movie_loading .movie__info {
+    display: block;
+    background: none;
+    padding-bottom: 68px;
+}
